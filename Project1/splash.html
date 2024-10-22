@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Splash Screen</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      #splash-container {
+        text-align: center;
+      }
+
+      #splash-container img {
+        max-width: 100%;
+        height: auto;
+      }
+      #main-content {
+        display: none;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Check if splash screen has already been shown
+        if (localStorage.getItem("splashShown")) {
+          window.location.href = "index.html"; // Redirect to main content if splash was already shown
+        } else {
+          // Set localStorage to indicate that splash has been shown
+          localStorage.setItem("splashShown", "true");
+          // Redirect to main content after 6 seconds
+          setTimeout(function () {
+            window.location.href = "index.html";
+          }, 6000);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="splash-container">
+      <img src="images/splash (2).gif" alt="Loading..." />
+    </div>
+  </body>
+</html>

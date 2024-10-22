@@ -1,0 +1,244 @@
+<!-- Include Bootstrap CSS from CDN -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<section id="blogs" class="blogs-section">
+  <h2 class="section-title">Our Blogs</h2>
+  <div class="blogs-container">
+    <div class="blogs-scroll">
+      <!-- Blog 1 -->
+      <div class="blog-item">
+        <img src="images/blog1.jpg" alt="Blog 1" class="blog-image" />
+        <div class="blog-content">
+          <h3 class="blog-title">Blog Title 1</h3>
+          <p class="blog-excerpt">
+            A brief description of the blog post content.
+          </p>
+          <p class="blog-author">By Author Name | Oct 1, 2024</p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+      <!-- Blog 2 -->
+      <div class="blog-item">
+        <img src="images/blog1.jpg" alt="Blog 1" class="blog-image" />
+        <div class="blog-content">
+          <h3 class="blog-title">Blog Title 1</h3>
+          <p class="blog-excerpt">
+            A brief description of the blog post content.
+          </p>
+          <p class="blog-author">By Author Name | Oct 1, 2024</p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+      <!-- Blog 3 -->
+      <div class="blog-item">
+        <img src="images/blog1.jpg" alt="Blog 1" class="blog-image" />
+        <div class="blog-content">
+          <h3 class="blog-title">Blog Title 1</h3>
+          <p class="blog-excerpt">
+            A brief description of the blog post content.
+          </p>
+          <p class="blog-author">By Author Name | Oct 1, 2024</p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+      <!-- Blog 4 -->
+      <div class="blog-item">
+        <img src="images/blog1.jpg" alt="Blog 1" class="blog-image" />
+        <div class="blog-content">
+          <h3 class="blog-title">Blog Title 1</h3>
+          <p class="blog-excerpt">
+            A brief description of the blog post content.
+          </p>
+          <p class="blog-author">By Author Name | Oct 1, 2024</p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+      <!-- Add more blog items as needed -->
+      <div class="blog-item">
+        <img src="images/blog1.jpg" alt="Blog 1" class="blog-image" />
+        <div class="blog-content">
+          <h3 class="blog-title">Blog Title 1</h3>
+          <p class="blog-excerpt">
+            A brief description of the blog post content.
+          </p>
+          <p class="blog-author">By Author Name | Oct 1, 2024</p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+      <div class="blog-item">
+        <img src="images/blog1.jpg" alt="Blog 1" class="blog-image" />
+        <div class="blog-content">
+          <h3 class="blog-title">Blog Title 1</h3>
+          <p class="blog-excerpt">
+            A brief description of the blog post content.
+          </p>
+          <p class="blog-author">By Author Name | Oct 1, 2024</p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+      <div class="blog-item">
+        <img src="images/blog1.jpg" alt="Blog 1" class="blog-image" />
+        <div class="blog-content">
+          <h3 class="blog-title">Blog Title 1</h3>
+          <p class="blog-excerpt">
+            A brief description of the blog post content.
+          </p>
+          <p class="blog-author">By Author Name | Oct 1, 2024</p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+      <div class="blog-item">
+        <img src="images/blog1.jpg" alt="Blog 1" class="blog-image" />
+        <div class="blog-content">
+          <h3 class="blog-title">Blog Title 1</h3>
+          <p class="blog-excerpt">
+            A brief description of the blog post content.
+          </p>
+          <p class="blog-author">By Author Name | Oct 1, 2024</p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+      <div class="blog-item">
+        <img src="images/blog1.jpg" alt="Blog 1" class="blog-image" />
+        <div class="blog-content">
+          <h3 class="blog-title">Blog Title 1</h3>
+          <p class="blog-excerpt">
+            A brief description of the blog post content.
+          </p>
+          <p class="blog-author">By Author Name | Oct 1, 2024</p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Blog Section Background */
+  .blogs-section {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    position: relative;
+  }
+
+  /* Section Title */
+  .section-title {
+    font-size: 48px;
+    color: #22686d;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .blogs-container {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+  }
+
+  .blogs-scroll {
+    display: flex;
+    transition: transform 0.3s ease;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .blog-item {
+    flex: 0 0 25%;
+    margin: 10px 20px;
+    min-height: 500px;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+  }
+
+  .blog-item:hover .blog-image {
+    transform: scale(1.05);
+  }
+
+  .blog-content {
+    padding: 15px;
+  }
+
+  .blog-title {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .blog-excerpt {
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+
+  .blog-author {
+    font-size: 16px;
+    color: #666;
+    margin-top: 15px;
+  }
+
+  .read-more {
+    background-color: #38adb5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  .read-more:hover {
+    background-color: #60c4c9;
+  }
+  .blogs-scroll::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+<!-- Include Bootstrap JS from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const blogsScroll = document.querySelector(".blogs-scroll");
+  const scrollLeftButton = document.getElementById("scroll-left");
+  const scrollRightButton = document.getElementById("scroll-right");
+
+  const scrollAmount = 300; // Amount to scroll with each button click
+
+  // Scroll left
+  scrollLeftButton.addEventListener("click", () => {
+    blogsScroll.scrollBy({
+      left: -scrollAmount,
+      behavior: "smooth",
+    });
+  });
+
+  // Scroll right
+  scrollRightButton.addEventListener("click", () => {
+    blogsScroll.scrollBy({
+      left: scrollAmount,
+      behavior: "smooth",
+    });
+  });
+</script>

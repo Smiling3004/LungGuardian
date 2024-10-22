@@ -1,0 +1,164 @@
+/* Header */
+header {
+  background-color: #38adb5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Flexbox setup for the header container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hidden by default, shown in mobile view */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 30px;
+  background-color: #ffffff;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Logo */
+.logo {
+  margin-left: 10px; /* Adds space between the hamburger and the logo */
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* Navigation Menu */
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 8px 12px;
+}
+
+nav ul li a:hover {
+  color: #333;
+  border-radius: 4px;
+}
+
+/* Auth & Profile */
+.auth-container {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Show the dropdown content when hovering over the profile-circle */
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: right;
+  z-index: 1000;
+}
+
+.dropdown-content a,
+.dropdown-content p {
+  display: block;
+  padding: 12px 20px;
+  color: #31969d;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #38adb5;
+  color: white;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack menu items vertically */
+    display: none; /* Hide the menu by default on mobile */
+    width: 100%;
+    background-color: #38adb5; /* Match header background */
+    position: absolute;
+    top: 100%; /* Position below the header */
+    left: 0;
+    z-index: 999;
+    gap: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  nav ul.active {
+    display: flex; /* Show menu when active */
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  .hamburger {
+    display: flex;
+    margin-left: 5px; /* Show hamburger icon */
+  }
+
+  .header-container {
+    justify-content: flex-start; /* Align items to the left */
+  }
+
+  .logo {
+    margin-left: 10px; /* Ensure logo is to the right of the hamburger */
+  }
+
+  .auth-container {
+    position: absolute; /* Position absolutely for mobile view */
+    right: 20px; /* Keep it on the right */
+    top: 10px;
+  }
+}
